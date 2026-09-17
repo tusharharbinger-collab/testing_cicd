@@ -3,7 +3,7 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 8080;
-const APP_VERSION = process.env.APP_VERSION || 'v1';
+const APP_VERSION = process.env.APP_VERSION || 'v2';
 const deployedAt = new Date().toISOString();
 
 app.get('*', (req, res) => {

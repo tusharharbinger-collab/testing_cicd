@@ -13,6 +13,7 @@ async function loadData() {
     document.getElementById('message').textContent = hello.message;
     document.getElementById('deployed').textContent = hello.deployedAt;
     document.getElementById('version').textContent = status.version;
+    document.getElementById('checked').textContent = new Date().toLocaleTimeString();
     const badge = document.getElementById('status');
     badge.textContent = status.status.toUpperCase();
     badge.style.background = status.status === 'ok' ? '#065f46' : '#7f1d1d';
